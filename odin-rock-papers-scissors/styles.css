@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+body > div > h3 {
+    text-align: center;
+}
+
+
+.player-text {
+    display: flex;
+    justify-content: center;
+}
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 80%;
+    border: 2px solid green;
+}
+.result-log-container {
+    display: flex;
+    flex-direction: column;
+}
