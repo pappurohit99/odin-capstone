@@ -5,13 +5,13 @@ const INIT_CELLS_PER_ROW = 4;
 let noOfCellsPerRow = 0;
 
 function setupCells(n) {
-  const container = document.querySelector('.grid-container');
+  const container = document.querySelector(".grid-container");
   container.style.gridTemplateColumns = `repeat(${n}, 60px)`;
   container.style.gridTemplateRows = `repeat(${n}, 60px)`;
 
-  for (let i = 1; i <= (n * n); i += 1) {
-    const cell = document.createElement('div');
-    cell.className = 'grid-cell';
+  for (let i = 1; i <= n * n; i += 1) {
+    const cell = document.createElement("div");
+    cell.className = "grid-cell";
     cell.id = `cell${i}`;
     cell.innerHTML = i;
     container.appendChild(cell);
@@ -20,9 +20,9 @@ function setupCells(n) {
 }
 
 function setupCellsEvtHandler() {
-  const cells = document.querySelectorAll('.grid-cell');
+  const cells = document.querySelectorAll(".grid-cell");
   cells.forEach((cell) => {
-    cell.addEventListener('mouseenter', () => {
+    cell.addEventListener("mouseenter", () => {
       r = Math.random() * 255;
       g = Math.random() * 255;
       b = Math.random() * 255;
@@ -45,8 +45,8 @@ function resetCanvas(newSize) {
 }
 
 function setupBtnEvtHandler() {
-  document.querySelector('.button').addEventListener('click', () => {
-    let n = prompt('Enter a number between 0 and 20', '4');
+  document.querySelector(".button").addEventListener("click", () => {
+    let n = prompt("Enter a number between 0 and 20", "4");
     n = Number(n);
     if (n >= 100 || Number.isNaN(n)) {
       n = 4;
