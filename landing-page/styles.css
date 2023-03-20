@@ -1,0 +1,184 @@
+/* Common styles */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.introduction,
+.profile,
+.quote,
+.actionCall,
+.footer {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.header,
+.introduction,
+.footer {
+    background-color: #1F2937;
+}
+
+button,
+.navbar,
+.introduction-text-contents {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 8px;
+}
+
+/* Navbar */
+
+.logo-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header-text {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+/* Introduction */
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.introduction-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.introduction-text-header {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.introduction-text-sign-up>button {
+    border: 0px;
+}
+
+.introduction-image {
+    flex-grow: 1;
+}
+
+.introduction-image {
+    min-width: 400px;
+    min-height: 100px;
+    background-color: #E5E7EB;
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-image-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.profile-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image-group>.image {
+    width: 50px;
+    height: 50px;
+    border: #3882F6 1px solid;
+}
+
+.profile-image-group>.image-subtext {
+    text-align: center;
+}
+
+/* Quote section */
+.quote {
+    background-color: #E5E7EB;
+    padding: 5% 25%
+}
+
+.main-quote {
+    text-align: center;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-author {
+    text-align: right;
+}
+
+/* Action call */
+.actionCall {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    margin: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actionCall-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actionCall-signup>button {
+    border: 1px #E5E7EB solid;
+}
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    font-size: 18px;
+    color: #E5E7EB;
+}
