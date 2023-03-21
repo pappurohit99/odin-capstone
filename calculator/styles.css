@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 440px;
+    height: 440px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: dimgrey;
+}
+
+.results {
+    height: 80px;
+    border: 0.5px solid black;
+    background-color: antiquewhite;
+}
+
+.button-grid {
+    height: 320px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    border: 0.5px black solid;
+    border-radius: 300px;
+    background-color: darkslategrey;
+    color:aliceblue;
+}
+
+.equal-operator {
+    background-color: cadetblue;
+}
